@@ -58,11 +58,11 @@
 						</div>
 
 						<div class="col">
-							
-							<fb:login-button 
+							<div class="fb-login-button fb btn" scope="public_profile,email" onlogin="checkLoginState();"></div>
+<!-- 							<fb:login-button 
 							  scope="public_profile,email"
 							  onlogin="checkLoginState();" class="fb btn">
-							</fb:login-button>
+							</fb:login-button> -->
 							<a class="twitter btn" href="https://twitter.com/login" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self">
 								<i class="fa fa-twitter fa-fw"></i> Login with Twitter
 							</a>
