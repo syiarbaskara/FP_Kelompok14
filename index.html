@@ -8,6 +8,39 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body background="IMG/FP4.png" id="body2">
+	
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '461472127984077',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v3.3'
+    });
+      
+    FB.getLoginStatus(function(response) {
+	    statusChangeCallback(response);
+	});   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	function statusChangCallback(response){
+		if(response.status === 'connected'){
+			console.log('Loggin in and authenticated');
+		}else{
+		console.log('Not authenticated');
+		}
+	}
+</script>
+	
+
 	<div class="show-login-btn"><i class="fas fa-sign-in-alt"></i> Show Login Form</div>
 	<div class="login-box">
 		<div class="hide-login-btn"><i class="fas fa-times"></i></div>
@@ -25,7 +58,11 @@
 						</div>
 
 						<div class="col">
-							<a href="https://www.facebook.com/login" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self" class="fb btn">
+							
+							<fb:login-button 
+							  scope="public_profile,email"
+							  onlogin="checkLoginState();" class="fb btn">
+							</fb:login-button>
 								<i class="fa fa-facebook fa-fw"></i> Login with Facebook
 							</a>
 							<a class="twitter btn" href="https://twitter.com/login" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self">
