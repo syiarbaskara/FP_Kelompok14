@@ -1,0 +1,279 @@
+body{
+			background-image: url(b1.jpg);
+			background-size: 100% 1080px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.con1{
+			display: flex;
+			flex-direction: row;
+		}
+		.wall{
+			height: 100%;
+			width: 1080px;
+		}
+		.logo{
+			width: 262px;
+			height: 158px;
+			position: relative;
+			top: 0px;
+			left: 0px;
+		}
+		.log{
+			width: 262px;
+			height: 158px;
+		}
+		.nav{
+			width: 90%;
+			height: 70px;
+			background-color: white;
+		}
+		.isi{
+			width: 70%;
+			height: 4360px;
+			background-color: #6F070A;
+			/*margin: 10px 10px;*/
+		}
+		.content{
+			width: 96%;
+			height: 4200px;
+			background-color: #2A2A31;
+			position: absolute;
+			top: 280px;
+			left: 33px;
+		}
+		.tablink{
+			background-color: white;
+			color: black;
+			border: none;
+			float: left;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			font-size: 17px;
+			width: 10%;
+		}
+		.tablink:hover{
+			background-color: #777;
+		}
+		.search-container {
+  			float: right;
+  			position: absolute;
+  			top: 168px;
+  			left: 1090px;
+		}
+		.search-container input[type=text] {
+  			padding: 6px;
+  			margin-top: 8px;
+  			font-size: 17px;
+  			border: none;
+		}
+		.search-container button {
+  			float: right;
+  			padding: 6px 10px;
+  			margin-top: 8px;
+  			margin-right: 16px;
+  			background: #ddd;
+  			font-size: 17px;
+  			border: none;
+  			cursor: pointer;
+		}
+		.sidenav {
+  			height: 40%;
+  			width: 0;
+  			position: fixed;
+  			z-index: 1;
+  			top: 158px;
+  			right:  0px;
+  			background-color: white;
+  			overflow-x: hidden;
+  			transition: 0.5s;
+  			padding-top: 60px;
+  			border: solid;
+		}
+
+		.sidenav a {
+			  padding: 8px 8px 8px 50px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  color: black;
+			  display: block;
+			  transition: 0.3s;
+			}
+
+		.sidenav a:hover {
+ 			 color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		.bar1, .bar2, .bar3 {
+		  			width: 35px;
+		  			height: 5px;
+		  			background-color: #333;
+		  			margin: 6px 0;
+		  			transition: 0.4s;
+				}
+		        .rigthnav {
+		  			display: inline-block;
+		  			cursor: pointer;
+				}
+		.change .bar1 {
+		  			-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		  			transform: rotate(-45deg) translate(-9px, 6px);
+				}
+
+				.change .bar2 {opacity: 0;}
+
+				.change .bar3 {
+		  			-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		  			transform: rotate(45deg) translate(-8px, -8px);
+				}
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		.rigthnav {
+					width: 10%;
+					height: 70px;
+					background-color: white;
+		  			display: inline-block;
+		  			cursor: pointer;
+		}
+		.isi{
+			width: 100%;
+			height: 4360px;
+			background-color: #D1E5F1;
+			position: absolute;
+			top: 228px;
+		}
+		.con2{
+			width: 95%;
+			height: 4200px;
+			background-color: white;
+			align-self: center;
+			margin: 60px 50px;
+		}
+		.user-post{
+			width: 250px;
+			height: 80px;
+			display: flex;
+			margin: 70px;
+		}
+		.user-post img{
+			width: 58px;
+			height: 58px
+		}
+		.tate{
+			width: 1200px;
+			height: 632px;
+		}
+		h2{
+			margin: 30px;
+		}
+		.con-tate{
+			width: 90%;
+			height: 235px;
+			margin: 30px;
+		}
+		.char1{
+			width: 1300px;
+			height: 1000px;
+		}
+		.bwh{
+			width: 100%;
+			height: 400px;
+			background-color: black;
+			display: flex;
+			flex-direction: row;
+		}
+		.fot{
+			width: 50%;
+			height: 300px;
+			margin: 15px;
+		}
+		.fot p{
+			color: white;
+		}
+		.fot1{
+			width: 50%;
+			height: 300px;
+		}
+		.fot a{
+			color: white;
+		}
+		.link{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+			justify-content: flex-end;
+		}
+		.link a{
+			color: white;
+			margin: 40px;
+		}
+		.icon{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+		.icon i{
+			color: white;
+			margin: 10px;
+		}
+		.chat{
+			width: 1000px;
+			height: 400px;
+			margin: 70px;
+		}
+		.chat1{
+			display: flex;
+			flex-direction: row;
+		}
+		.list-group-item{
+			width: 800px;
+			height: 100px;
+			background-color: #D1E5F1;
+			opacity: 10;
+
+		}
+		.list-group{
+			width: 80%;
+			height: 100px;
+			margin: 10px;
+		}
+		.btn-success{
+			width: 90px;
+			height: 40px;
+		}
+		.coment{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.form-control{
+			width: 600px;
+			height: 40px;
+		}
+		.user-post1{
+			width: 250px;
+			height: 80px;
+			display: flex;
+		}
+		.user-post1 img{
+			width: 58px;
+			height: 58px
+		}
+		.garis{
+			width: 3px;
+			height: 180px;
+			background-color: #D1E5F1;
+			margin: 10px;
+		}
+		.comen{
+			background-color: #D1E5F1;
+		}

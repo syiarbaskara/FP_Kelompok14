@@ -1,0 +1,86 @@
+body{
+	width: 1380px;
+	height: 670px;
+}
+
+#kotak1{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	margin-right: 40px;
+}
+
+.img1{
+	width: 1300px;
+	height: 660px;
+	background-image: url(../IMG/img4.jpg);
+	background-size: 1250px 650px; 
+	margin-top: -10px;
+}
+
+.putih{
+	margin-top: 20px;
+	margin-left: 30px;
+	position: absolute;
+	background: white;
+	width: 600px;
+	height: 620px;
+}
+
+.logo{
+	padding-left: 10px;
+}
+
+.daftar{
+	padding-left: 50px;
+	margin-top: -20px;
+}
+
+.kotakbaris{
+	margin-left: 70px;
+}
+
+
+label{
+	height: bold;
+	font-size: 20px;
+	margin-left: 70px;
+}
+
+.syarat{
+	position: absolute;
+	bottom: 130px;
+	left: 60px;
+	text-align: center;
+}
+
+.blue{
+	color: blue;
+	cursor: pointer;
+}
+
+.submit2{
+	display: flex;
+	position: absolute;
+	left: 70px;
+	bottom: 10px;
+
+}
+
+#submit3{
+	width: 450px;
+	color: white;
+}
+
+.recaptchaa{
+	position: absolute;
+	bottom: 55px;
+	left: 150px;
+}
+
+.botright{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	cursor: pointer;
+}
