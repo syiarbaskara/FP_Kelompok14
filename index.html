@@ -8,39 +8,35 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body background="IMG/FP4.png" id="body2">
-	
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '461472127984077',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v3.3'
-    });
-      
-    FB.getLoginStatus(function(response) {
-	    statusChangeCallback(response);
-	});   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-	function statusChangCallback(response){
-		if(response.status === 'connected'){
-			console.log('Loggin in and authenticated');
-		}else{
-		console.log('Not authenticated');
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '461472127984077',
+	      cookie     : true,
+	      xfbml      : true,
+	      version    : 'v3.3'
+	    });
+	      
+	    FB.getLoginStatus(function(response) {
+		    statusChangeCallback(response);
+		});   
+	      
+	  };
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "https://connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+		function statusChangCallback(response){
+			if(response.status === 'connected'){
+				console.log('Loggin in and authenticated');
+			}else{
+			console.log('Not authenticated');
+			}
 		}
-	}
-</script>
-	
-
+	</script>
 	<div class="show-login-btn"><i class="fas fa-sign-in-alt"></i> Show Login Form</div>
 	<div class="login-box">
 		<div class="hide-login-btn"><i class="fas fa-times"></i></div>
@@ -59,17 +55,12 @@
 
 						<div class="col">
 							<div class="fb-login-button fb btn" scope="public_profile,email" onlogin="checkLoginState();"></div>
-<!-- 							<fb:login-button 
-							  scope="public_profile,email"
-							  onlogin="checkLoginState();" class="fb btn">
-							</fb:login-button> -->
 							<a class="twitter btn" href="https://twitter.com/login" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self">
 								<i class="fa fa-twitter fa-fw"></i> Login with Twitter
 							</a>
-<!-- 							<a href="https://syiarbaskara.github.io/FP_Kelompok14/com.html" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self" class="google btn"><i class="fa fa-google fa-fw"> -->
+							<a href="https://accounts.google.com/signin" onclick="window.open(this.href,'popupwindow','width=700,height=500,scrollbar,resizable'); return false;"  target="_self" class="google btn"><i class="fa fa-google fa-fw">
 							</i> Login with Google
 						</a>
-							<a href="https://syiarbaskara.github.io/FP_Kelompok14/com.html">ada</a>
 					</div>
 
 					<div class="col">
@@ -79,7 +70,7 @@
 
 						<input type="text" name="username" placeholder="Username" required>
 						<input type="password" name="password" placeholder="Password" required>
-						<input type="submit" value="Login">
+						<button style="width: 350px;height: 40px; background-color: green;border: none;"><a href="home.html" style="color: white;">Login</a></button>
 					</div>
 
 				</div>
@@ -102,4 +93,3 @@
 </script>
 </body>
 </html>
-
