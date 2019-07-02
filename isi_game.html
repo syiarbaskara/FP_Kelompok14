@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style>
+	.con2{
+		width: 95%;
+		height: auto;
+		background-color: #2A2A31;
+		align-self: center;
+		margin: 60px 50px;
+	}
+	.user-post{
+		width: 250px;
+		height: 80px;
+		display: flex;
+		margin: 70px;
+		color: white;
+	}
+	.user-post img{
+		width: 58px;
+		height: 58px;
+	}
+	.kotak1{
+		width: 90% ;
+		height:800px;
+		background-color:#0F1124;
+		margin: 40px;
+	}
+	.apex{
+		width: 1100px;
+		height: 620px;
+		margin-left: 50px;
+	}
+	.kotak2{
+		width: 90%;
+		height: 1900px;
+		background-color:#0F1124;
+		margin: 50px;
+	}
+	.kotak3{
+		width: 85%;
+		height: 500px;
+		color: white;
+		display: flex;
+		flex-direction: row;
+		margin-left: 50px;
+	}
+	.kotak3 img{
+		width: 700px;
+		height: 350px;
+	}
+	h3{
+		color: white;
+		margin-top: 10px;
+		margin-left: 50px;
+	}
+	h2{
+		color: white;
+		margin-top: 10px;
+	}
+	.bwh{
+		width: 100%;
+		height: 400px;
+		background-color: black;
+		display: flex;
+		flex-direction: row;
+	}
+	.fot{
+		width: 50%;
+		height: 300px;
+		margin: 15px;
+	}
+	.fot p{
+		color: white;
+	}
+	.fot1{
+		width: 50%;
+		height: 300px;
+	}
+	.fot a{
+		color: white;
+	}
+	.link{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-around;
+		justify-content: flex-end;
+	}
+	.icon{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	.icon i{
+		color: white;
+		margin: 10px;
+	}
+	.link a{
+		color: white;
+		margin: 40px;
+	}
+	.q1{
+		color: white;
+		margin-left:40px;
+	}
+	.x1{
+		width: 88%;
+		height: 50px;
+		background-color: black;
+		margin: 20px;
+		opacity: 3;
+	}
+	.x2{
+		width: 60%;
+		height: 80px;
+		margin-left: 20px;
+	}
+	.chat{
+		width: 1000px;
+		height: 400px;
+		margin: 70px;
+	}
+	.chat1{
+		display: flex;
+		flex-direction: row;
+	}
+	.list-group-item{
+		width: 800px;
+		height: 100px;
+		background-color: #A1998E;
+		opacity: 10;
+
+	}
+	.list-group{
+		width: 80%;
+		height: 100px;
+		margin: 10px;
+	}
+	.user-post1{
+		width: 250px;
+		height: 80px;
+		display: flex;
+	}
+	.user-post1 img{
+		width: 58px;
+		height: 58px
+	}
+	.garis{
+		width: 3px;
+		height: 180px;
+		background-color: #A1998E;
+		margin: 10px;
+	}
+	.comen{
+		background-color: #A1998E;
+	}
+	.user-post1{
+		width: 250px;
+		height: 80px;
+		display: flex;
+		color: white;
+	}
+	.user-post1 img{
+		width: 58px;
+		height: 58px
+	}
+</style>
+
+
+</head>
+<body ng-app='App' class="isi">
+	<phone-list></phone-list>
+	<div style="background-color: #6F070A;height: auto;width: 100%;">
+		<br>
+		<div class="con2">
+			<div class="kotak1">
+				<div class="user-post">
+					<img src="IMG/syiar.jpg">
+					<font face="Helvetica">
+						<h4>Syi'ar7</h4>
+						<p></p>
+						<h5>16-05-2019 14:16</h5>
+					</font>
+				</div>
+				<img src="IMG/Apex_Legends.jpg" class="apex">
+			</div>
+			<br>
+			<div class="kotak2">
+				<br>
+				<div class="x1"><h2><font face="Helvetica">3 Hal yang Diharapkan akan Hadir dalam Apex Legends Kedepannya</font></h2></div><br>
+				<p class="q1">Tak ada hujan tak ada badai, siapa sangka Apex Legends garapan Respawn Entertainment yang muncul secara tiba-tiba tersebut langsung 
+					menghebohkan jagat Battle Royale hanya dalam hitungan hari. Pasalnya, EA selaku publisher tidak sedikitpun memberikan kabar apa-apa 
+					tentang pengembangan game Apex Legends. Dan baru tiga hari semenjak perilisannya, setidaknya sudah ada 10 juta pemain yang telah 
+				memainkan game tersebut.</p>
+				<p></p>
+				<h3>Lebih banyak Legends</h3>
+				<div class="kotak3">
+					<img src="IMG/apex-legends.jpg">
+					<p class="x2">Apex Legends menghadirkan jagoan-jagoan yang memiliki kemampuan dan keunikannya sendiri. Namun saat ini hanya tersedia 8 Legends atau jagoan yang bisa kamu pakai, dimana hanya 6 yang bisa kamu pakai secara gratis. Dan sang developer setidaknya merencanakan akan muncul satu Legends baru di tahun 2019 ini.
+
+					Besar harapan bahwa setidaknya Respawn Entertainment merilis lebih dari satu Legends dalam selang waktu beberapa bulan. Dan tentu harapan lainnya adalah hadirnya karakter-karakter yang lebih atraktif lagi seperti yang dilakukan oleh Blizzard pada game Overwatch.</p>
+				</div>
+				<p></p>
+				<h3>Variasi Map</h3>
+				<div class="kotak3">
+					<img src="IMG/Kings-Canyon.jpg">
+					<p class="x2">Seperti pada kebanyakan Battle Royale, Apex 
+						Legends dimulai dengan satu lokasi pertempuran 
+						saja. Tidak aneh memang mengingat bahwa PUBG 
+						sendiri mendapatkan map baru setelah hampir 
+						setahun, bahkan Fortnite sampai saat ini hanya 
+						memiliki satu map saja.
+
+						Namun Apex Legends sendiri bisa dikatakan memiliki 
+						luas map yang kecil walau memang padat dan penuh 
+						dengan tempat untuk looting. Hadirnya map baru 
+						tentu memberikan suasana permainan yang lebih 
+						bervariatif lagi. Hal ini juga perlu dilakukan 
+					secepatnya agar para pemain tidak cepat bosan.</p>
+				</div>
+				<p></p>
+				<h3>Adanya Kendaraan</h3>
+				<div class="kotak3">
+					<img src="IMG/Bajaj-PUBG.jpg">
+					<p class="x2">Satu hal yang sangat disayangkan dari perilisan Apex 
+						Legends adalah tidak ada hadirnya moda transportasi 
+						yang bisa digunakan untuk berpindah tempat dengan 
+						cepat, atau mungkin lebih tepatnya digunakan 
+						menabrak pemain lainnya.
+
+						Apex Legends memang memiliki sebuah alat yang 
+						akan melemparkanmu ke udara dan kamu bisa 
+						meluncur ke tempat yang kamu inginkan. Namun 
+						tidak bisa dipungkiri juga bahwa hadirnya moda 
+						transportasi seperti mobil buggy atau motor dengan 
+						tiga penumpang tentu akan membuat alur 
+					pertempuran lebih seru.</p>
+				</div>
+			</div>
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.3&appId=461472127984077&autoLogAppEvents=1"></script>
+			<div class="fb-comments" data-href="https://github.com/syiarbaskara/FP_Kelompok14/com.html" data-width="100px" data-numposts="5"></div>
+		</div>
+		<footer>
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="article.html">Article</a>
+						<a href="video.html">Video</a>
+						<a href="games.html">Games</a>
+						<a href="about_us.html">About Us</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p> 
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

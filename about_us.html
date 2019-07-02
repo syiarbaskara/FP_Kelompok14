@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style type="text/css">
+		#about_us{
+			background-color: #F52446;
+		}
+	</style>
+
+</head>
+<body ng-app='App' class="isi">
+	<phone-list></phone-list>
+	<div style="background-color: white;">
+		<div class="judul_about_us">
+			<h3>FORUM ANIME AND GAMES</h3><br>
+			<p>Didirikan oleh Brayen, Reza dan Syiar pada tahun 2019 guna tugas UAS</p>
+			<p>Pemrograman Web</p>
+		</div>
+		<div class="isi_about_us">
+			<h3 style="color: #F52446;">ABOUT US</h3><br>
+			<p>Forum Anime and Games adalah forum komunitas para gamers dan otaku yang membahas </p>
+			<p>berita - berita seputar anime dan game. Forum ini baru dimulai tahun 2019 dan diharapkan akan semakin berkembang ke depannya</p>
+			<h3 style="color: #F52446;padding-top: 100px;">VISI DAN MISI</h3><br>
+			<p>Kami memang bukan yang pertama , tapi kami mempunyai mimpi baru yakni berekreasi. Bagaimana</p>
+			<p>menyajikan informasi anime dan games yang menarik juga membantu komunitas game dan anime dalam aktivitasnya.</p> 
+			<p>Kami berharap dengan adanya forum websites ini, industry anime dan games tidak dipandang sebelah mata lagi. </p>
+			<h3 style="color: #F52446;padding-top: 100px;">OUR TEAM</h3><br>
+			<div id="daftar_creator">
+		    	<div class="imagekotak">
+		    		<img src="IMG/brayen.jpg">
+		    		<b><br>Brayen Bakara
+					<br>17.11.1539</b>
+		    	</div>
+		    	<div class="imagekotak">
+		    		<img src="IMG/reza.jpg">
+		    		<b><br>Reza Anugrah
+					<br>17.11.1545</b>
+		    	</div>
+		    	<div class="imagekotak">
+		    		<img src="IMG/syiar.jpg">
+		    		<b><br>Syiar Baskara
+					<br>17.11.1587</b>
+		    	</div>
+		    </div>
+		<footer>
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="article.html">Article</a>
+						<a href="video.html">Video</a>
+						<a href="games.html">Games</a>
+						<a href="about_us.html">About Us</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p> 
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

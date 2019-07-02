@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+</head>
+<body ng-app='App' class="isi">
+	<phone-list></phone-list>
+	<div style="background-color: #72EACB; ">
+		<div class="judul_video_isi">
+			<div class="pembuat_vid">
+				<img src="IMG/brayen.jpg">
+				<p style="margin-left: 20px;"><b>Brayen21</b></p>
+			</div>
+			<h5 style="margin-left: 20px;"><u>Final Fantasy VII Remake - Teaser Trailer</u></h5>
+		</div>
+		<div id ="pembuka_video">
+			<iframe width="580" height="325" src="https://www.youtube.com/embed/Df0YG3qfZ8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div id ="isi_text_video">
+			<div id ="text_video">
+				<p>
+					Sudah tak sabar menunggu Final Fantasy VII Remake? Penantian lamamu selama hampir empat tahun terakhir akhirnya bisa terbayar. Pasalnya, Square Enix baru saja  merilis trailer terbaru gim daur ulang Final Fantasy VII tersebut.
+				</p>
+				<p>
+					Diperlihatkan di ajang State of Play, trailer berdurasi 1 menit 7 detik ini mengumbar sejumlah adegan ikonis Final Fantasy VII dalam balutan grafik yang begitu realistis. Trailer juga memperlihatkan serangkaian adegan tarung para karakter, seperti Cloud, Tifa, Aerith, Barret, dalam modus gameplay pertarungan baru yang tampaknya akan seperti ke Final Fantasy Type-0 dan Final Fantasy XV, yang mana lebih condong ke Action RPG ketimbang Turn Based. Laman Ubergizmo melaporkan kalau detail terkait Final Fantasy VII Remake sendiri akan diumumkan lebih lanjut pada Juni 2019. Tidak bisa dipastikan kapan gim ini akan  dirilis. Banyak yang menduga, Final Fantasy VII Remake akan diluncurkan pada 2020, atau bahkan 2021.Seperti diungkapkan produser Final Fantasy VII Remake Yoshinori Kitase, "kami tengah mempersiapkan informasi resmi lebih banyak pada Juni 2019. Namun, kami juga ingin mencoba sesuatu yang baru dengan memperlihatkan secuil trailer di State of Play dan melihat bagaimana respons kalian."
+				</p>
+				<hr>
+				<div id="like_dislike">
+					<div id="like"></div>
+					<div id="dislike"></div>
+					<img id="chat"src="IMG/chat.png">
+					<img id="share" src="IMG/share.png">
+				</div>
+			</div>
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.3&appId=461472127984077&autoLogAppEvents=1"></script>
+			<div class="fb-comments" data-href="https://github.com/syiarbaskara/FP_Kelompok14/com.html" data-width="100px" data-numposts="5"></div>
+		</div>
+		<footer>
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="article.html">Article</a>
+						<a href="video.html">Video</a>
+						<a href="games.html">Games</a>
+						<a href="about_us.html">About Us</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p> 
+				</div>
+			</div>
+		</footer> 
+	</div>
+</body>
+</html>

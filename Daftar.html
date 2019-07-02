@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daftar</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Daftar.css">
+
+	<!-- recaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+	'use strict';
+	window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    	form.addEventListener('submit', function(event) {
+    		if (form.checkValidity() === false) {
+    			event.preventDefault();
+    			event.stopPropagation();
+    		}
+    		form.classList.add('was-validated');
+    	}, false);
+    });
+}, false);
+})();
+
+function myFunction() {
+	var x = document.getElementById("myInput");
+	if (x.type === "password") {
+		x.type = "text";
+	} else {
+		x.type = "password";
+	}
+}
+</script>
+
+</head>
+<body background="IMG/background.jpg">
+
+	<div id="kotak1">
+		<div class="img1">
+			<div class="putih">
+				<div><img src="IMG/logo.png" class="logo" height="90px"></div>
+				<div class="daftar"><h2>Daftar</h2></div>
+
+
+				<div>
+					<form class="needs-validation" novalidate>
+						<div class="form-column">
+
+							<div class="col-md-10 mb-0">
+								<label for="validationCustom03">Username</label>
+								<div class="kotakbaris">
+									<input type="text" class="form-control" id="validationCustom03" placeholder="username" required>
+									<div class="invalid-feedback">
+										Wajib masukin Username!
+									</div>
+									<div class="valid-feedback">
+										Good Username!
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-10 mb-0">
+								<label for="validationCustom04">Password</label>
+								<div class="kotakbaris">
+									<input type="password" class="form-control" id="myInput" placeholder="password" required>
+									<input type="checkbox" onclick="myFunction()">Show Password
+									<div class="invalid-feedback">
+										Wajib masukin Password
+									</div>
+									<div class="valid-feedback">
+										Strong Password
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-10 mb-0">
+								<label for="validationDefaultUsername">Phone</label>
+								<div class="kotakbaris">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="inputGroupPrepend2">+62</span>
+										</div>
+										<input type="number" class="form-control" id="validationCustom04" placeholder="81xxxx" required>
+										<div class="invalid-feedback">
+											Wajib masukin Nomor
+										</div>
+										<div class="valid-feedback">
+											Great Phone Number!!
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="recaptchaa" for="invalidCheck">			
+								<div class="g-recaptcha" data-sitekey="your_site_key" required></div>	
+							</div>
+							<div class="submit2">
+								<button id="submit3" class="btn btn-primary" type="submit"><a href="home.html" style="color: white;">DAFTAR</a></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="syarat">
+					<b>Dengan klik Daftar, Agan telah menyetujui <b class="blue">Syarat & Ketentuan<br>
+					serta kebijakan Privasi FORME</b></b>
+				</div>
+
+				<div class="botright">
+					<a style="color: black;" href="Login.html"><b>Masuk ?</b></a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		#video{
+			background-color: #72EACB;
+		}
+	</style>
+	
+</head>
+<body ng-app='App' class="isi">
+	<phone-list></phone-list>
+	<div style="background-color: #72EACB;">
+		<div id="nonton_video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3xSGv3Hfio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<article id ="deskripsi_video">
+				<h3><a style="color: white;" href="isi_video.html">Final Fantasy VII Remake - Teaser Trailer</a></h3>
+				<p>Kini game final fantasy VII Remake telah
+					mengalami banyak peningkatan dari segi 
+					gameplay dan juga grafik. Kita tunggu saja 
+					perkembangan game ini di bulan Juni 2019.
+				</p>
+			</article>
+		</div>
+		<h3 style="padding-left: 20px;padding-top: 10px;padding-bottom: 10px;"><u>Hot Today</u></h3>
+		<div class="list_video">
+			<div class="btn_prev" id="btn_prev_ht"></div>
+			<div class="video" id="ht_vid1">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/Z3xSGv3Hfio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="ht_vid2">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/rXMX4YJ7Lks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="ht_vid3">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/cK4iAjzAoas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="btn_next" id="btn_next_ht"></div>
+		</div>
+		<h3 style="padding-left: 20px;padding-top: 70px;padding-bottom: 10px;"><u>Recommended</u></h3>
+		<div class="list_video">
+			<div class="btn_prev" id="btn_prev_recom"></div>
+			<div class="video" id="recom_vid1">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/iKhSEZLpmNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="recom_vid2">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/78ngg0SRlEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="recom_vid3">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/M9FGaan35s0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="btn_next" id="btn_next_recom"></div>
+		</div>
+		<h3 style="padding-left: 20px;padding-top: 70px;padding-bottom: 10px;"><u>Anime</u></h3>
+		<div class="list_video">
+			<div class="btn_prev" id="btn_prev_anime"></div>
+			<div class="video" id="anime_vid1">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/r3rJqoqk4gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="anime_vid2">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/DLat_-OyHIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="anime_vid3">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/ZG6eC7WT1gk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="btn_next" id="btn_next_anime"></div>
+		</div>
+		<h3 style="padding-left: 20px;padding-top: 70px;padding-bottom: 10px;"><u>Games</u></h3>
+		<div class="list_video">
+			<div class="btn_prev" id="btn_prev_games"></div>
+			<div class="video" id="games_vid1">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/2VawSnaxtSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="games_vid2">
+				<iframe width="560" height="300" src="https://www.youtube.com/embed/7U50iYupwBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video" id="games_vid3">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/YApuEWtG30w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="btn_next" id="btn_next_games"></div>
+		</div>
+		<footer>
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="article.html">Article</a>
+						<a href="video.html">Video</a>
+						<a href="games.html">Games</a>
+						<a href="about_us.html">About Us</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn_next_ht").click(function(){
+				$("#ht_vid3").show();
+				$("#ht_vid1").hide();
+			});
+			$("#btn_prev_ht").click(function(){
+				$("#ht_vid1").show();
+				$("#ht_vid3").hide();
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn_next_recom").click(function(){
+				$("#recom_vid3").show();
+				$("#recom_vid1").hide();
+			});
+			$("#btn_prev_recom").click(function(){
+				$("#recom_vid1").show();
+				$("#recom_vid3").hide();
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn_next_anime").click(function(){
+				$("#anime_vid3").show();
+				$("#anime_vid1").hide();
+			});
+			$("#btn_prev_anime").click(function(){
+				$("#anime_vid1").show();
+				$("#anime_vid3").hide();
+			});
+		});
+
+		$(document).ready(function(){
+			$("#btn_next_games").click(function(){
+				$("#games_vid3").show();
+				$("#games_vid1").hide();
+			});
+			$("#btn_prev_games").click(function(){
+				$("#games_vid1").show();
+				$("#games_vid3").hide();
+			});
+		});
+
+	</script>
+</body>
+</html>

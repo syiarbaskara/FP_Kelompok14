@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body ng-app='App' class="isi2">
+	<phone-list></phone-list>
+	<div class="isi2" style="background-color: #F2F1F1;">
+		<div class="profil">
+			<img src="IMG/bckgrnd.jpg" class="background_profil">
+			<div class="akun">
+				<img src="IMG/a8.jpg" class="foto_profil">
+				<div class="nama_profil">
+					<p align="center">Indah</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="informasi">
+			<div class="status">
+				<p align="center"><b>Status</b></p>
+				<hr>
+				<div class="isi_status">
+					<p style="margin-left: 10px;"><b>Post</b></p>
+					<p style="margin-left: 30px;"><b>Pengikut</b></p>
+					<p><b>Mengikuti</b></p>	
+				</div>
+				<div class="justifydlm2">
+					<p style="color: red">1</p>
+					<p style="color: blue">2</p>
+					<p style="color: green">3</p>
+				</div>
+			</div>
+
+			<div id="daftar_status">
+				<p style="margin-top: 10px;margin-left: 10px;"><b>Artikel Post</b></p>
+				<p style="margin-top: 10px;"><b>Video Thread</b></p>
+				<p style="margin-top: 10px;margin-right: 10px;"><b>Forum Thread</b></p>
+			</div>
+
+			<div class="status2">
+				<p align="center"><b>Memiliki</b></p>
+				<hr>
+				<div class="isi_status">
+					<p style="margin-left: 10px;"><b>Artikel</b></p>
+					<p style="margin-right: 10px;"><b>Video</b></p>
+				</div>
+				<div class="justifydlm2">
+					<p style="color: darkgrey">10</p>
+					<p style="color: brown">50</p>
+				</div>
+			</div>
+
+			<div class="kotak5">
+				<div id="pstn">
+					Urutkan :
+					<select class="bhlg" name="option">
+						<option class="">Teraktif</option>
+						<option class="">Terlama</option>
+						<option class="">Terbaru</option>
+					</select>
+				</div>
+				<br>
+				<hr class="hr5">
+				<div class="brddlm">
+					<div class="vl3"></div>
+					<img src="IMG/a8.jpg" class="imgbrd">
+					<div class="ktdlm">
+						Indah
+						<br>
+						<time id="hari"></time>
+						<b></b>
+						<time id="jam"></time>
+						<b>:</b>
+						<time id="menit"></time>
+					</div>
+					<div class="dotposisi">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+					<div class="comment">
+						<b class="kgrey">Membalas Thread</b>
+						<b class="kpink">Nowibu_Nolife</b>
+						<br>
+						<h5 class="">Game PS4 Terbaik Menurut Saya</h5>
+						<h6>GOD of War Cuy :V</h6>
+						<div class="kecil1">
+							<img height="15px" src="IMG/no_like.png">
+							<img height="20px" src="IMG/dislike.png">
+							<h5 class="posisi">3</h5>
+						</div>
+						<div class="kecil2">
+							<img height="20px" src="IMG/Chat.png">
+							<img height="20px" src="IMG/Share.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer2">
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="">Anime</a>
+						<a href="">Game</a>
+						<a href="">Video</a>
+						<a href="">News</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p> 
+				</div>
+			</div>
+		</footer> 
+	</div>
+</body>
+</html>

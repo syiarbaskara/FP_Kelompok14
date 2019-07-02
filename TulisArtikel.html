@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<!-- Tampilan CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/Tampilan.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- JQuery CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/phone-list.component.js"></script>
+
+	<!-- Boostrap  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Textarea Link -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+
+</head>
+<body ng-app='App' class="isi">
+	<phone-list></phone-list>
+	<div class="isi" style="background-color: #F2F1F1;">
+		<div id="content">
+			<div class="input">
+				<div class="kotak1">
+					<div class="contentdlm">	
+						<div class="pkanan">
+							<time class="mday" id="hari"></time>
+							<b></b>
+							<time id="jam"></time>
+							<b>:</b>
+							<time id="menit"></time>
+						</div>
+						<img src="IMG/a8.jpg" width="80px" height="80px;" class="imgdlm">
+						<center><b><u>Indah</u></b></center>
+					</div>
+				</div>
+			</div>
+
+			<div class="input">
+				<input type="text" name="" class="inputt" placeholder="ISI JUDUL">
+			</div>
+
+			<div class="input">
+				<textarea id="textarea2" name="editordata"></textarea>
+			</div>
+
+			<div class="input">
+				<div class="dlmktk3">
+					<div class="pkate">
+						<b>PILIH KATEGORI</b>
+					</div>
+					<select class="dpdown" name="cars">
+						<option value="PILIHKATEGORI">PILIH KATEGORI</option>
+						<option value="">GAME</option>
+						<option value="">ARTIKEL</option>
+						<option value="">VIDEO</option>
+					</select>
+					<div class="vl"></div>
+					<div class="rkanan2">
+						<button class="btn2 btn2hjo">SIMPAN</button>
+						<button class="btn2 btn2bru">POST</button>
+					</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div id="tampung">
+				<div id="kiri">
+					<img src="IMG/logo.png">
+					<p>&copy; 2019 ForMe. All right reserved.</p>
+				</div>
+				<div id="kanan">
+					<div id="icon">
+						<i style="margin:30px 40px;" class="fa fa-twitter"></i>
+						<i style="margin:30px 40px;" class="fa fa-instagram"></i>
+						<i style="margin:30px 40px;" class="fa fa-facebook-f"></i>
+					</div>
+					<div id="link">
+						<a href="">Anime</a>
+						<a href="">Game</a>
+						<a href="">Video</a>
+						<a href="">News</a>
+					</div>
+					<p style="color: gray;margin-top: 30px;">Website design by Group 14</p> 
+				</div>
+			</div>
+		</footer> 
+	</div>
+	<!-- Jquery DATETIME -->
+	<script>
+		var d = new Date();
+		var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		document.getElementById("hari").innerHTML = days[d.getDay()];
+		document.getElementById("jam").innerHTML = d.getHours();
+		document.getElementById("menit").innerHTML = d.getMinutes();
+	// script textarea
+		$('#textarea2').summernote({
+			placeholder: 'Tulis apa yang kamu pikirkan',
+			tabsize: 2,
+			height: 200,
+			width : 970,
+			minHeight: null,
+			maxHeight: null,
+			fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New','Times New Roman','Constantia'],
+			toolbar: [
+			['style', ['style']],
+			['font', ['bold','italic', 'underline', 'clear']],
+			['fontname', ['fontname']],
+			['color', ['color']],
+			['para', ['ul', 'ol', 'paragraph']],
+			['table', ['table']],
+			['insert', ['link', 'picture', 'video']],
+			['view', ['fullscreen']],
+			],
+		});
+	</script>
+</body>
+</html>
