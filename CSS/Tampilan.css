@@ -1,0 +1,971 @@
+body{
+	background-image: url(../IMG/background.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+}
+
+#menu{
+	width: 100%;
+	height: 59px;
+	background-color: white;
+}
+
+.submenu{
+	background-color: white;
+	color: black;
+	border: none;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	padding: 16px 16px;
+	font-size: 18px;
+	width: 10%;
+	transition: all 1s ease;
+	overflow: hidden;
+}
+
+#home:hover{
+	background-color: #F2F1F1;
+}
+#article:hover{
+	background-color: #77C1DC;
+}
+#video:hover{
+	background-color: #72EACB;
+}
+#games:hover{
+	background-color: #6F070A;
+}
+#about_us:hover{
+	background-color: #F52446;
+}
+
+.isi{
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+.search-container {
+	margin-left: 72%;
+	position: absolute;
+	top: 112px;
+}
+.search-container input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+.search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.rigthnav {
+	width: 10%;
+	height: 70px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top: 106px;
+	right: 0px;
+}
+
+.sidenav {
+	height: 40%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 158px;
+	right:  0px;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 50px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+.rigthnav {
+	width: 10%;
+	height: 70px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 40%;
+}
+
+/*CSS for article*/
+.tulisan{
+	width: 60%;
+	height: 250;
+	margin-left: 5px;
+	transition: all 1s ease;
+}
+
+.size{
+	width: 80%;
+	height: auto;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+	border: 1px solid #F2F1F1;
+	transition: all 1s ease;
+}
+
+.size:hover{
+	box-shadow: 10px 10px grey;
+}
+
+.size img{
+	width: 400px;
+	height: 230px;
+	margin: 10px;
+}
+
+/*CSS for video*/
+#nonton_video{
+	display: flex;
+	flex-direction: row;
+	color: white;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+}
+
+#deskripsi_video{
+	margin-left: 40px;
+	width: 50%;
+}
+
+.list_video{
+	background-color: white;
+	display: flex;
+	width: auto;
+	height: auto;
+	margin-top: 30px;
+}
+
+.video{
+	margin:20px 45px;
+}
+
+#ht_vid3{
+	display: none;
+}
+
+#recom_vid3{
+	display: none;
+}
+
+#anime_vid3{
+	display: none;
+}
+
+#games_vid3{
+	display: none;
+}
+
+.btn_prev{
+	display: flex;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border:1.5px solid #7E7E7E;
+	cursor: pointer;
+	margin-top: 120px;
+	margin-left: 30px;
+	margin-right: 20px;
+	transition: 0.8s;
+	overflow: hidden;
+	background-image: url('../IMG/prev.png');
+	background-size: cover;
+}
+
+.btn_next{
+	display: flex;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border:1.5px solid #7E7E7E;
+	cursor: pointer;
+	margin-top: 120px;
+	margin-left: 30px;
+	margin-right: 20px;
+	transition: 0.8s;
+	overflow: hidden;
+	background-image: url('../IMG/next.png');
+	background-size: cover;
+}
+
+.btn_prev:hover, .btn_next:hover{
+	background-color:  #72EACB;
+	border:1.5px solid black;
+}
+
+/*CSS for about_us*/
+.judul_about_us{
+	background-color: #F52446;
+	width: 100%;
+	height: 325px;
+	color: white;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.isi_about_us{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+#daftar_creator{
+	background-color: white;
+	height: 300px;
+	text-align: center;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.imagekotak{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+/*CSS for isi_video*/
+.judul_video_isi{
+	background-color: white;
+	width: 100%;
+	height: 175px;
+	border: 1px solid #707070;
+	margin-bottom: 20px;
+}
+
+.pembuat_vid{
+	width: 300px;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 20px;
+	display: flex;
+}
+
+.pembuat_vid img{
+	height: 70px;
+	width: 70px;
+}
+
+#pembuka_video{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#isi_text_video{
+	background-color: white;
+	max-width: 70%;
+	height: 450px;
+	display: flex;
+	margin-left: 15%;
+	align-items: center;
+	margin-top: -80px;
+}
+
+#text_video{
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	word-spacing: 5px;
+	font-size: 15px;
+	margin-top: 70px;
+	height: auto;
+}
+
+#like_dislike{
+	display: flex;
+	flex-direction: row;
+	margin:20px;
+	justify-content: space-between;
+}
+
+#like_dislike img{
+	height: 20px;
+	width: auto;
+}
+
+#like{
+	cursor: pointer;
+	margin-right: 20px;
+	background: url(../IMG/no_like.png);
+	height: auto;
+	width: 40px;
+	background-size: cover;
+	transition: 0.8s;
+}
+
+
+#like:hover{
+	background: url("../IMG/like.png");
+	height: auto;
+	width: 40px;
+	background-size: cover;
+}
+
+#dislike{
+	cursor: pointer;
+	margin-right: 400px;
+	background: url(../IMG/no_dislike.png);
+	height: auto;
+	width: 40px;
+	background-size: cover;
+	transition: 0.8s;
+}
+
+#dislike:hover{
+	background: url("../IMG/dislike.png");
+	height: auto;
+	width: 40px;
+	background-size: cover;
+}
+
+#chat{
+	cursor: pointer;
+	margin-left: 400px;
+}
+
+#share{
+	cursor: pointer;
+	margin-left: 40px;
+}
+
+
+/*CSS for home*/
+.berita{
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 12%;
+	width: 800px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	transition: all 1s ease;
+}
+
+#tmp{
+	display: flex;
+	flex-direction:row;
+}
+
+.top{
+	width: 200px;
+	height: 100px;
+	border: 1px solid #707070;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#top_user{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 450px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 100px;
+	align-items: center;
+}
+
+.berita:hover{
+	box-shadow: 10px 10px grey;
+}
+
+.foto_berita{
+	height: auto;
+	width: auto;
+	margin: 20px;
+	width: 300px;
+	height: auto;
+}
+
+.pembuat_brt{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pembuat_brt p{
+	margin-left: 10px;
+}
+
+.berita article{
+	margin: 10px;
+	width: 500px;
+}
+
+.berita hr{
+	border-width: 2px;
+}
+
+/*CSS for buat thread*/
+#bck_buat_thread{
+	display: flex;
+	width: 100%;
+	height: 800px;
+	background-color: #F2F1F1;
+	justify-content: center;
+}
+
+#profil_thread{
+	display: flex;
+	background-color: white;
+	height: 200px;
+	width: 1800px;
+	margin: 50px 120px;
+	border:1px solid #707070;
+}
+
+#wkt_tulis{
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	color: white;
+	position:relative;
+	bottom:0;
+	margin-top: 30px;
+}
+
+#tampung{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#kanan{
+	display: flex;
+	height: auto;
+	width: 300px;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+#link{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+#link a{
+	color: white;
+}
+
+#icon{
+	display:flex;
+
+}
+
+
+
+/*Punya REZA A.*/
+/*isi akun css*/
+.isi2{
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+.footer2{
+	background-color: black;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	color: white;
+	position:relative;
+	bottom:0px;
+	margin-top: 30px;
+}
+
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+}
+
+.profil{
+	display: flex;
+	width: 1200px;
+	height: 275px;
+	margin-top: 50px;
+	margin-left: 75px;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.background_profil{
+	width: 1000px;
+	height: 300px;
+}
+
+.akun{
+	background-color: white;
+	border: 1px solid #707070;
+	height: 300px;
+	width: 200px;
+}
+
+.foto_profil{
+	height: 125px;
+	width: 125px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 30px;
+}
+
+.nama_profil{
+	margin-top: 25px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.informasi{
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+
+
+.status{
+	background-color: white;
+	height: 200px;
+	width: 350px;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 75px;
+	border: 1px solid #707070;
+}
+
+.status2{
+	position: absolute;
+	background-color: white;
+	height: 200px;
+	width: 350px;
+	padding: 20px;
+	margin-top: 270px;
+	margin-left: 75px;
+	border: 1px solid #707070;
+}
+
+.kotak5{
+	margin-top: 150px;
+	margin-left: 475px;
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	background-color:white;
+	border: 1px solid #707070;
+}
+
+.hr5{
+	width: 550px;
+	border: 0.3px solid #707070;
+}
+
+.isi_status{
+	display: flex;
+	justify-content: space-between;
+}
+
+#daftar_status{
+	background-color: white;
+	height: 60px;
+	width :600px;
+	border: 1px solid #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#pstn{
+	position: absolute;
+	right: 0px;
+}
+
+.btn {
+	background-color: #2196F3;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+
+.dropdown {
+	position: absolute;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.btn:hover, .dropdown:hover .btn {
+	background-color: #0b7dda;
+}
+
+/*Tulis Artikel*/
+#content{
+	text-align: center;
+	display: flex;
+	color: black;
+	height: auto;
+	align-items: center;
+	flex-direction: column;
+}
+
+.kotak1{
+	margin-top: 30px;
+	width: 970px;
+	height: 130px;
+	background-color:white;
+	justify-content: center;
+	display: flex;
+	border: 0.3px solid #707070;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pkanan{
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.input{
+	position: relative;
+	margin-top: 15px;
+	text-align: left;
+}
+
+.inputt{
+	width: 970px;
+	height: 40px;
+	font-size: 17px;
+	padding-left: 10px;
+	border: 0.3px solid #707070;
+}
+
+.txtdlm{
+
+}
+
+#contentdlm{
+	text-align: center;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.imgdlm{
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.dlmktk2{
+	width: 980px;
+	height: 50px;
+	background-color:white;
+	border-radius: 30px;
+}
+
+#dlmalign{
+	margin-top: 7px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#dlmalign2{
+	position: relative;
+	top: 7px;
+	align-items: center;
+}
+
+.rkiri{
+	display: flex;
+	justify-content: space-between;
+}
+
+.dlmktk3{
+	border: 0.3px solid #707070;
+	width: 970px;
+	height: 100px;
+	background-color:white;
+	justify-content: center;
+	display: flex;
+}
+
+.pkate{
+	top: 10px;
+	left: 20px;
+	position: absolute;
+}
+
+.dpdown{
+	top: 40px;
+	left: 20px;
+	position: absolute;
+	width: 250px;
+	cursor: pointer;
+}
+
+/* vertical line */
+.vl {
+	top: 10px;
+	position: absolute;
+	left: 50%;
+	border: 0.5px solid;
+	height: 80px;
+}
+
+.vl2 {
+	position: absolute;
+	width: 0px; 
+	height: 35px; 
+	border: 0.6px #000 solid;
+}
+
+.mday{
+	margin-right: 10px;
+}
+
+.bhlg{
+	border: none;
+	font-weight: bold;
+}
+
+.justifydlm2{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 30px;
+	margin-left: 20px;
+}
+
+.rkanan2{
+	position: absolute;
+	top: 25px;
+	right: 120px;
+}
+
+.btn2{
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	font-size: 14px;
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	margin-left: 30px;
+}
+
+.btn2hjo{
+	border-color: #4CAF50;
+	color: green;
+}
+
+.btn2hjo:hover{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.btn2bru{
+	border-color: #2196F3;
+	color: dodgerblue;
+}
+
+.btn2bru:hover{
+	background: #2196F3;
+	color: white;
+}
+
+.brddlm{
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-left: 20px;
+	border: 1px solid;
+	background-color: white;
+	width: 550px;
+	height: 200px;
+}
+
+.vl3 {
+	margin-top: 5px;
+	margin-left: 3px;
+	position: absolute;
+	border: 1px solid lightblue;
+	height: 170px;
+}
+
+.imgbrd{
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
+}
+
+.ktdlm{
+	font-weight: bold;
+	font-size: 12px;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+}
+
+.dot {
+	right: 20px;
+	top: 20px;
+	margin-top: 2px;
+	height: 6px;
+	width: 6px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+}
+
+.dotposisi{
+	position: absolute;
+	right: 35px;
+	top: 60px;
+}
+
+.comment{
+	margin-top: 8px;
+	margin-left: 14px;
+	border: 1px solid;
+	border-color: grey;
+	background-color: white;
+	width: 510px;
+	height: 110px;
+	padding-left: 15px;
+}
+
+.kgrey{
+	color: grey;
+	font-size: 12px;
+}
+
+.kpink{
+	color: lightpink;
+	font-size: 12px;
+}
+
+.posisi{
+	position: absolute;
+	bottom: 50px;
+	margin-left: 70px;
+}
+
+.kecil1{
+	margin-right: 5px;
+}
+
+.kecil2{
+	position: absolute;
+	right: 50px;
+	bottom: 60px;
+}
+/*punya reza*/
